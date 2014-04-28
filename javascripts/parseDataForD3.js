@@ -1,14 +1,3 @@
-/* Convert Data */
-var items={"name":"social media","children":
-	[{"name":"google","children":
-			[
-			], "size":20},
-	  {"name":"instagram","children":
-			[
-			], "size":20}
-	]
-};
-
 var instagramArr=[
 {"tags":"صباح الخير شوفوا النظرة عجيبة","likes_count":"1749","content_type":"image"},
 {"tags":"فهد_البشاره","likes_count":"676","content_type":"video"},
@@ -181,40 +170,361 @@ var googleArr=
 {"woeid":"23424933","the_date":"20140422","sdoid":"2","title":"Earth Day","search_count":"100","rank":"2","url":"www.pastemagazine.com/articles/2014/04/small-time.html","image_url":"t2.gstatic.com/images?q=tbn:ANd9GcSJnb6ZwPZn0IKW2L23KbTYFFzT-wU1zgFBJDP5CGNjWN9j89B2PjdUl_v8e5txT3qn5Zl_nDlz","timestamp":"2014-04-22 17:16:19 +0000"},
 ];
 
+var twitterArr=[{"title":"allianz arena", "size":	20},
+{"title":"bel\u00e9n esteban","size":	11},
+{"title":"download flappy bird for twitter","size":10},
+{"title":"elena poniatowska","size":	15},
+{"title":"happy easter","size":16},
+{"title":"happy st georges day","size":	38},
+{"title":"kim soo hyun","size":	11},
+{"title":"led zep","size":16},
+{"title":"luke shaw"	,"size":11},
+{"title":"may allah"	,"size":15},
+{"title":"new malden"	,"size":17},
+{"title":"oswaldo vigas"	,"size":25},
+{"title":"petr cech"	,"size":15},
+{"title":"premio cervantes"	,"size":21},
+{"title":"quero voc\u00ea - fly"	,"size":11},
+{"title":"rafa m\u00e1rquez"	,"size":16},
+{"title":"real madrid"	,"size":44},
+{"title":"reyes de europa"	,"size":28},
+{"title":"rio de janeiro"	,"size":11},
+{"title":"ron maclean"	,"size":10},
+{"title":"ryan giggs"	,"size":25},
+{"title":"salve jorge"	,"size":10},
+{"title":"salve s\u00e3o jorge"	,"size":15},
+{"title":"sancho panza"	,"size":19},
+{"title":"sandro bondi"	,"size":12},
+{"title":"san jorge"	,"size":27},
+{"title":"shazia ilmi"	,"size":23},
+{"title":"sir suho"	,"size":37},
+{"title":"taylor swift"	,"size":12},
+{"title":"televisa chapultepec"	,"size":13},
+{"title":"thiago brava"	,"size":11},
+{"title":"tony blair"	,"size":35},
+{"title":"tony wahyu septian indi riandy"	,"size":25},
+{"title":"totally spies"	,"size":16},
+{"title":"twitter profil"	,"size":28},
+{"title":"twtviralcom penipu"	,"size":10},
+{"title":"unlimited cellphone battery"	,"size":13},
+{"title":"valeria marini"	,"size":14},
+{"title":"van gaal"	,"size":39},
+{"title":"viva arag\u00f3n"	,"size":12},
+{"title":"wali supit testing"	,"size":19},
+{"title":"welttag des buches"	,"size":15},
+{"title":"william shakespeare"	,"size":70},
+{"title":"won da mo"	,"size":10},
+{"title":"world cup"	,"size":22},
+{"title":"xabi alonso"	,"size":10},
+{"title":"ya allah"	,"size":18},
+{"title":"yves cbn"	,"size":11},
+{"title":"zaid vs tony"	,"size":25},
+{"title":"zayn is in poland"	,"size":20},
+{"title":"benzema"	,"size":10},
+{"title":"#experienceeverything","size":10},
+{"title":"ireland"	,"size":10},
+{"title":"#jasatwitterlazuardyk"	,"size":10},
+{"title":"mannschaft"	,"size":10},
+{"title":"#oluwadonblessme_by_lilfred"	,"size":10},
+{"title":"#sclerotime"	,"size":10},
+{"title":"#sospascal"	,"size":10},
+{"title":"switzerland"	,"size":10},
+{"title":"#uykusuzmanyak"	,"size":10},
+{"title":"#wewantaustinmahoneinfrance"	,"size":10},
+{"title":"#dereksays"	,"size":11},
+{"title":"dominanz"	,"size":11},
+{"title":"#jlsmemories"	,"size":11},
+{"title":"#leoporque"	,"size":11},
+{"title":"#mumstock"	,"size":11},
+{"title":"#nocensuresmisvideojuegos"	,"size":11},
+{"title":"#nomevaque"	,"size":11},
+{"title":"#polandsaysgoodbyezayn"	,"size":11},
+{"title":"#realmadridbayern"	,"size":11},
+{"title":"#auspol"	,"size":12},
+{"title":"#encontactoconmaduronro6"	,"size":12},
+{"title":"fussball"	,"size":12},
+{"title":"noah"	,"size":12},
+{"title":"pacers"	,"size":12},
+{"title":"#realbayern"	,"size":12},
+{"title":"r\u00fcckspiel"	,"size":12},
+{"title":"sewol"	,"size":12},
+{"title":"#stgeorgesday"	,"size":12},
+{"title":"ttvtt"	,"size":12},
+{"title":"tuhan"	,"size":12},
+{"title":"#twinning"	,"size":12},
+{"title":"#voicesave"	,"size":12},
+{"title":"atam"	,"size":13},
+{"title":"ballbesitz"	,"size":13},
+{"title":"#bucciovertimechallenge"	,"size":13},
+{"title":"easter"	,"size":13},
+{"title":"#franzbart"	,"size":13},
+{"title":"#freespirit"	,"size":13},
+{"title":"melbourne"	,"size":13},
+{"title":"#mynypd"	,"size":13},
+{"title":"#paynecondamaiorque"	,"size":13},
+{"title":"#raif_66"	,"size":13},
+{"title":"raptors"	,"size":13},
+{"title":"robben"	,"size":13},
+{"title":"#selfie"	,"size":13},
+{"title":"#concluestudiantil"	,"size":14},
+{"title":"#exonthebeach"	,"size":14},
+{"title":"#ijozibahvideo"	,"size":14},
+{"title":"#indahnyanegrikita"	,"size":14},
+{"title":"#megustadeestemundo"	,"size":14},
+{"title":"#merakettimacaba"	,"size":14},
+{"title":"#mirabellathefreakshow"	,"size":14},
+{"title":"#pocareply"	,"size":14},
+{"title":"#sawattpad"	,"size":14},
+{"title":"#throwback"	,"size":14},
+{"title":"#tiaraayustarlitngefansdiicky_48"	,"size":14},
+{"title":"twitterze"	,"size":14},
+{"title":"xaviers"	,"size":14},
+{"title":"zaynem"	,"size":14},
+{"title":"#4xfastercharging"	,"size":15},
+{"title":"#askneonjess"	,"size":15},
+{"title":"london"	,"size":15},
+{"title":"malaysia"	,"size":15},
+{"title":"#mererompelaspelotas"	,"size":15},
+{"title":"#novosseguidorescomotheozitomesegueretribuo"	,"size":15},
+{"title":"#sak\u0131nincinmeyin"	,"size":15},
+{"title":"segurola"	,"size":15},
+{"title":"#shakespeare450th"	,"size":15},
+{"title":"#telefonumagelenensonsms"	,"size":15},
+{"title":"#temaldisco"	,"size":15},
+{"title":"#verbeek"	,"size":15},
+{"title":"england"	,"size":16},
+{"title":"#epnvsinternet"	,"size":16},
+{"title":"#fakingitpremiere"	,"size":16},
+{"title":"luhan"	,"size":16},
+{"title":"terry"	,"size":16},
+{"title":"#copodoluansantana"	,"size":17},
+{"title":"#englishandproud"	,"size":17},
+{"title":"#matteorisponde"	,"size":17},
+{"title":"#satwitter"	,"size":17},
+{"title":"tumblr"	,"size":17},
+{"title":"#ubtop40"	,"size":17},
+{"title":"wallah"	,"size":17},
+{"title":"#alasanjawab"	,"size":18},
+{"title":"#giornatamondialedellibro"	,"size":18},
+{"title":"#gleealong"	,"size":18},
+{"title":"tmht"	,"size":18},
+{"title":"toronto"	,"size":18},
+{"title":"frankfurt"	,"size":19},
+{"title":"#singmeinensong"	,"size":19},
+{"title":"tarzan"	,"size":19},
+{"title":"#zomger"	,"size":19},
+{"title":"alemania"	,"size":20},
+{"title":"#atlcfc"	,"size":20},
+{"title":"gujarat"	,"size":20},
+{"title":"lisboa"	,"size":20},
+{"title":"madrid"	,"size":20},
+{"title":"#masakitisipinna"	,"size":20},
+{"title":"#novosibirskroom"	,"size":20},
+{"title":"#wahyurifkiboker"	,"size":20},
+{"title":"#welttagdesbuches"	,"size":20},
+{"title":"wizards"	,"size":20},
+{"title":"cech"	,"size":21},
+{"title":"mumbai"	,"size":21},
+{"title":"namo"	,"size":21},
+{"title":"shakespeare"	,"size":21},
+{"title":"vorlesung"	,"size":21},
+{"title":"#welcometopolandzayn"	,"size":21},
+{"title":"#wheniwakeupilooklike"	,"size":21},
+{"title":"bulls"	,"size":22},
+{"title":"#egzamingimnazjalny"	,"size":22},
+{"title":"#ghoshanapatrawithmodi"	,"size":22},
+{"title":"#kejriwal4kashi"	,"size":22},
+{"title":"#nochesdepoker"	,"size":22},
+{"title":"#rif2014"	,"size":22},
+{"title":"#tipsparahindikamabored"	,"size":22},
+{"title":"varanasi"	,"size":22},
+{"title":"#britneycantamaisaltoquedaquieunaoteescuto"	,"size":23},
+{"title":"#maduroespuebloproductivo"	,"size":23},
+{"title":"muslims"	,"size":23},
+{"title":"ronaldo"	,"size":23},
+{"title":"chelsea"	,"size":24},
+{"title":"modi","size":	24},
+{"title":"#nationalsendyourmannudesday"	,"size":24},
+{"title":"#rmafcb"	,"size":24},
+{"title":"#stephensstory"	,"size":24},
+{"title":"#nanayfamousline"	,"size":25},
+{"title":"venezuela"	,"size":25},
+{"title":"#thisnoters"	,"size":27},
+{"title":"#diadellibro"	,"size":28},
+{"title":"b. 30 menit"	,"size":11},
+{"title":"#greentvshows"	,"size":30},
+{"title":"russia"	,"size":30},
+{"title":"ukraine"	,"size":30},
+{"title":"#frasesdegordascobardes"	,"size":31},
+{"title":"#skipto1mill"	,"size":31},
+{"title":"#zaidkangenkinanti"	,"size":31},
+{"title":"#halamadrid"	,"size":32},
+{"title":"#proudtobeenglish"	,"size":33},
+{"title":"bayern"	,"size":34},
+{"title":"tots"	,"size":34},
+{"title":"wwat"	,"size":34},
+{"title":"united"	,"size":35},
+{"title":"#4daysuntilproblem"	,"size":36},
+{"title":"torres"	,"size":39},
+{"title":"#theneonlightstourbrazil"	,"size":40},
+{"title":"m\u00e9xico"	,"size":41},
+{"title":"#recomiendaunlibro"	,"size":42},
+{"title":"#vali\u00f3madrecuando"	,"size":44},
+{"title":"#problemasdeinfancia"	,"size":47},
+{"title":"#ahoritamegustariatener"	,"size":49},
+{"title":"#mattsvideooftheweek"	,"size":55},
+{"title":"whatsapp"	,"size":56},
+{"title":"moyes"	,"size":65},
+{"title":"#felizdiadellibro"	,"size":70},
+{"title":"#asktroye"	,"size":84}];
+
+
+/* Convert Data */
+var items={"name":"social media","children":
+	[{"name":"google","children":
+			[
+			], "size":20},
+	  {"name":"instagram","children":
+			[
+			], "size":20}
+	]
+};
+
+var itemGoogleObj={};
+var itemInstagramObj={};
+var itemTwitterObj={};
+var itemYahooObj={};
+var itemParentArr=[];
+
+var itemGoogleArr=[];
+var itemInstagramArr=[];
+var itemTwitterArr=[];
+var getDataDone = $.Deferred();
+var getDataDone1 = $.Deferred();
+var getDataDone2 = $.Deferred();
+
+
 
 $(document).ready(function () {
-	//console.log(googleArr);
-	
 
-$.each( googleArr, function(index, value ) {
-	var obj={};
-	if(value.search_count>500){
-    obj["name"] = value.title;
-    obj["size"]= parseInt(value.search_count);
-    obj["language"]="google";
-    console.log(obj);
-    items["children"][0]["children"].push(obj);
-}
-    console.log(items["children"][0].children);
+	//Deferred call to createGoogleObject and createInstagramObject
+	//console.log(getGoogleObject);
+
+	createGoogleObject();
+	createInstagramObject();
+	createTwitterObject();
+ 	$.when(getDataDone, getDataDone1, getDataDone2).then(function(){
+        console.log("Create items Data ");
+        createData();
+    });
 
 
-  });
-$.each( instagramArr, function(index, value ) {
-	var obj1={};
-	if(value.likes_count>5000){
-    obj1["name"] = value.tags;
-    obj1["size"]= parseInt(value.likes_count);
-    obj1["language"]="instagram";
-    console.log(obj1);
-    items["children"][0]["children"].push(obj1);
-}
-    console.log(items["children"][0].children);
 
 
-  });
-
-console.log(items);
   //your code here
 });
+
+function createData(){
+
+	//Push itemParentArr to items["chilren"]
+    items["children"]=itemParentArr;
+    console.log(items);
+}
+
+/*function getGoogleObject(){
+			console.log("inside Google object");
+		$.ajax({
+		success:createGoogleObject
+	})
+}*/
+
+function createGoogleObject(){
+		console.log("inside iner google object");
+	
+		$.each(googleArr, function(index, value ) 
+		{
+		var obj={};
+		if(value.search_count>500)
+		{
+    	obj["name"] = value.title;
+    	obj["size"]= parseInt(value.search_count)/100;
+    	obj["language"]="google";
+    	itemGoogleArr.push(obj);
+
+    	}
+		});
+		console.log("Pringting Goog le inner Array");
+		console.log(itemGoogleArr);
+		//Make Google Object {"name":"google", "children":itemGoogleArr, "size":2000}
+		itemGoogleObj["name"]="google";
+    	itemGoogleObj["children"]=itemGoogleArr;
+    	itemGoogleObj["size"]=2000;
+    	//Push Google Object to the Parent Array
+    	itemParentArr.push(itemGoogleObj);
+    	getDataDone.resolve();
+    	
+
+
+ 
+}
+
+function createInstagramObject(){
+    console.log("inside instagram");
+    var count=0;
+
+	$.each( instagramArr, function(index, value ) 
+	{
+	var obj={};
+
+	if(value.likes_count>500)
+	{
+    obj["name"] = value.tags;
+    obj["size"]= parseInt(value.likes_count)/100;
+    count=count+obj["size"];
+    obj["language"]="instagram";
+    console.log("inside instagram");
+    console.log(obj);
+    itemInstagramArr.push(obj);
+
+
+	}
+    //items["children"][0]["children"].push(obj);
+	});
+	//Make Instagram Object {"name":"instagram", "children":itemInstagramArr, "size":2000}
+	itemInstagramObj["name"]="instagram";
+    itemInstagramObj["children"]=itemInstagramArr;
+    itemInstagramObj["size"]=count;
+    //Push Google Object to the Parent Array
+    itemParentArr.push(itemInstagramObj);
+    getDataDone1.resolve();
+}
+
+
+function createTwitterObject(){
+    console.log("inside twitter");
+
+	$.each(twitterArr, function(index, value ) 
+	{
+	var obj={};
+
+	
+    obj["name"] = value.title;
+    obj["size"]= parseInt(value.size);
+    obj["language"]="twitter";
+    console.log("inside twitter");
+    console.log(obj);
+
+	
+    //items["children"][0]["children"].push(obj);
+    itemTwitterArr.push(obj);
+	});
+	//Make Twitter Object {"name":"twitter", "children":itemTwitterArr, "size":2000}
+	itemTwitterObj["name"]="twitter";
+    itemTwitterObj["children"]=itemTwitterArr;
+    itemTwitterObj["size"]=2000;
+    //Push Google Object to the Parent Array
+    itemParentArr.push(itemTwitterObj);
+    getDataDone2.resolve();
+}
 
 

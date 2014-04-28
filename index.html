@@ -57,7 +57,7 @@ line.link {
             <option value="data/wordpress.json">WordPress / WordPress</option>
             <option value="data/rails.json">rails / rails</option>
             <option value="data/symfony.json">symfony / symfony (WARNING: will make your computer scream)</option>
-            <option value="data/tubetrend1.json">tubetrend</option>
+            <option value="data/tubetrend2.json">tubetrend</option>
 
             <option value="data/zf2.json">zendframework / zf2 (WARNING: will make your computer scream
           </select>
@@ -146,7 +146,7 @@ $ git ls-files | xargs wc -l > symfony.wc
         w = parseInt(Math.sqrt(total) * 30, 10);
         h = parseInt(Math.sqrt(total) * 30, 10);
         // create a new CodeFlower
-        currentCodeFlower = new CodeFlower("#visualization", w, h).update(json);
+        currentCodeFlower = new CodeFlower("#visualization", 600, 600).update(json);
       };
 
       d3.json('data.json', createCodeFlower);
