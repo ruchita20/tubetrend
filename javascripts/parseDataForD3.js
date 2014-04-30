@@ -378,6 +378,58 @@ var twitterArr=[{"title":"allianz arena", "size":	20},
 {"title":"#felizdiadellibro"	,"size":70},
 {"title":"#asktroye"	,"size":84}];
 
+var yahooArr=[
+{"the_date":"20140422","sdoid":"3","rank":"1","title":"'Macaulay Culkin'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"2","title":"'Miranda Kerr'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"3","title":"'Yosemite climber falls'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"4","title":"'Netflix prices'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"5","title":"'Mall parking lot shooting'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"6","title":"'Nina Davuluri'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"7","title":"'Liz Carmouche'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"8","title":"'Starved inmate'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"9","title":"'Powdered alcohol'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"10","title":"'AARP'","timestamp":"2014-04-22 08:10:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"1","title":"'Elin Nordegren'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"2","title":"'Big Bang theory'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"3","title":"'Macaulay Culkin'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"4","title":"'Yosemite climber falls'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"5","title":"'The Goonies '","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"7","title":"'Liz Carmouche'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"8","title":"'Netflix prices'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"9","title":"'Mall parking lot shooting'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"10","title":"'AARP'","timestamp":"2014-04-22 16:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"1","title":"'Macaulay Culkin'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"2","title":"'Miranda Kerr'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"3","title":"'Yosemite climber falls'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"4","title":"'Netflix prices'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"5","title":"'Mall parking lot shooting'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"6","title":"'Nina Davuluri'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"7","title":"'Liz Carmouche'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"8","title":"'Starved inmate'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"9","title":"'Powdered alcohol'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"10","title":"'AARP'","timestamp":"2014-04-22 08:12:08 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"1","title":"'Macaulay Culkin'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"2","title":"'Miranda Kerr'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"3","title":"'Yosemite climber falls'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"4","title":"'Netflix prices'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"5","title":"'Mall parking lot shooting'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"6","title":"'Nina Davuluri'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"7","title":"'Liz Carmouche'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"8","title":"'Starved inmate'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"9","title":"'Powdered alcohol'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"10","title":"'AARP'","timestamp":"2014-04-22 08:14:05 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"1","title":"'Miranda Kerr'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"2","title":"'Nina Davuluri'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"3","title":"'Yosemite climber falls'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"4","title":"'Netflix prices'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"5","title":"'Starved inmate'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"6","title":"'Macaulay Culkin'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"7","title":"'Liz Carmouche'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"8","title":"'Mall parking lot shooting'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"9","title":"'Powdered alcohol'","timestamp":"2014-04-22 12:02:04 +0000"},
+{"the_date":"20140422","sdoid":"3","rank":"10","title":"'AARP'","timestamp":"2014-04-22 12:02:04 +0000"},
+];
+
 
 /* Convert Data */
 var items={"name":"social media","children":
@@ -388,6 +440,7 @@ var items={"name":"social media","children":
 			[
 			], "size":20}
 	]
+	,"size":10
 };
 
 var itemGoogleObj={};
@@ -396,12 +449,15 @@ var itemTwitterObj={};
 var itemYahooObj={};
 var itemParentArr=[];
 
+
 var itemGoogleArr=[];
 var itemInstagramArr=[];
 var itemTwitterArr=[];
+var itemYahooArr=[];
 var getDataDone = $.Deferred();
 var getDataDone1 = $.Deferred();
 var getDataDone2 = $.Deferred();
+var getDataDone3 = $.Deferred();
 
 
 
@@ -413,7 +469,8 @@ $(document).ready(function () {
 	createGoogleObject();
 	createInstagramObject();
 	createTwitterObject();
- 	$.when(getDataDone, getDataDone1, getDataDone2).then(function(){
+	createYahooObject();
+ 	$.when(getDataDone, getDataDone1, getDataDone2, getDataDone3).then(function(){
         console.log("Create items Data ");
         createData();
     });
@@ -525,6 +582,34 @@ function createTwitterObject(){
     //Push Google Object to the Parent Array
     itemParentArr.push(itemTwitterObj);
     getDataDone2.resolve();
+}
+
+
+function createYahooObject(){
+    console.log("inside yahoo");
+
+	$.each(yahooArr, function(index, value ) 
+	{
+	var obj={};
+
+	
+    obj["name"] = value.title;
+    obj["size"]= parseInt(value.rank);
+    obj["language"]="yahoo";
+    console.log("inside yahoo");
+    console.log(obj);
+
+	
+    //items["children"][0]["children"].push(obj);
+    itemYahooArr.push(obj);
+	});
+	//Make Twitter Object {"name":"yahoo", "children":itemYahooArr, "size":2000}
+	itemYahooObj["name"]="yahoo";
+    itemYahooObj["children"]=itemYahooArr;
+    itemYahooObj["size"]=2000;
+    //Push Google Object to the Parent Array
+    itemParentArr.push(itemYahooObj);
+    getDataDone3.resolve();
 }
 
 
