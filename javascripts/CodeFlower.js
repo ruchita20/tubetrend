@@ -1,3 +1,7 @@
+var div = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
 var CodeFlower = function(selector, w, h) {
   this.w = w;
   this.h = h;
@@ -37,7 +41,7 @@ CodeFlower.prototype.update = function(json) {
 
   // Restart the force layout
   this.force
-    .gravity(Math.atan(total / 50) / Math.PI * 0.4)
+    .gravity(Math.atan(total / 50)/ Math.PI * 0.4)
     .nodes(nodes)
     .links(links)
     .start();
@@ -71,7 +75,20 @@ CodeFlower.prototype.update = function(json) {
     .classed('directory', function(d) { return (d._children || d.children) ? 1 : 0; })
     .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; })
     .style("fill", function color(d) {
-      return "hsl(" + parseInt(360 / total * d.id, 10) + ",90%,70%)";
+      if(d.language=="yahoo"){
+        return '#6a026e';
+      }
+      if(d.language=="google"){
+        return '#dd4b39';
+      }
+      if(d.language=="instagram"){
+        return '#517fa4';
+      }
+       if(d.language=="twitter"){
+        return '#00aced';
+      }
+      else{return "hsl(" + parseInt(360 / total * d.id, 10) + ",90%,70%)";}
+      
     })
     .call(this.force.drag)
     .on("click", this.click.bind(this))
@@ -86,6 +103,8 @@ CodeFlower.prototype.update = function(json) {
     .attr('dy', 0)
     .attr('dx', 0)
     .attr('text-anchor', 'middle');
+
+
 
   return this;
 };
@@ -109,6 +128,7 @@ CodeFlower.prototype.flatten = function(root) {
 };
 
 CodeFlower.prototype.click = function(d) {
+  console.log("inside click");
   // Toggle children on click.
   if (d.children) {
     d._children = d.children;
@@ -118,12 +138,22 @@ CodeFlower.prototype.click = function(d) {
     d._children = null;
   }
   this.update();
+
 };
 
 CodeFlower.prototype.mouseover = function(d) {
-  this.text.attr('transform', 'translate(' + d.x + ',' + (d.y - 5 - (d.children ? 3.5 : Math.sqrt(d.size) / 2)) + ')')
-    .text(d.name + ": " + d.size )
+
+  console.log("inside mouseover");
+  this.text.text(d.name + ": " + d.size )
     .style('display', null);
+    div.transition()        
+                .duration(200)      
+                .style("opacity", 10);      
+                div .html("<p>"+d.name+"</p>")  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 28) + "px"); 
+
+
 };
 
 CodeFlower.prototype.mouseout = function(d) {

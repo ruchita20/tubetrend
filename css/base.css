@@ -1,0 +1,14 @@
+
+
+
+
+
+.node {
+  border: solid 3px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
